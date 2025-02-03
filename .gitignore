@@ -1,0 +1,59 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Virtual environment
+venv/
+env/
+*.env
+*.venv
+
+# Django migrations (optional, but useful to avoid conflicts)
+**/migrations/**/  
+
+# Ignore database and secret key files
+db.sqlite3
+config/settings/local.py
+config/settings/*.local.py
+config/settings/secrets.json
+
+# Media & Static files (if managed by a CDN or storage service)
+media/
+static/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker and deployment
+docker-compose.override.yml
+*.dockerfile
+*.pem  # Private keys
+
+# Celery and background tasks
+celerybeat-schedule
+*.pid
+
+# Jupyter Notebooks (if applicable)
+.ipynb_checkpoints/
+
+# Coverage and test reports
+.coverage
+htmlcov/
+*.cover
+nosetests.xml
+test-results/
+
+# Compiled files
+*.so
+*.egg-info/
+dist/
+build/
+
+# Ignore gunicorn and uWSGI logs (for production servers)
+gunicorn.log
+uwsgi.log
